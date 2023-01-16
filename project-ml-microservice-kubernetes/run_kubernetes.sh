@@ -19,7 +19,8 @@ kubectl run appdemo \
 kubectl get pods
 
 # Sleep while the pods is created and running
-sleep 15
+sleep 25
+kubectl get pods
 
 # Step 4:
 # Forward the container port to a host

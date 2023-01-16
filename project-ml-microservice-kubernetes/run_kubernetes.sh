@@ -13,14 +13,13 @@ kubectl run appdemo \
     --image=${dockerpath}:v1.0.0\
     --port=80 --labels app=appdemo
 
+# Sleep while the pods is created and running
+sleep 25
 
 # Step 3:
 # List kubernetes pods
 kubectl get pods
 
-# Sleep while the pods is created and running
-sleep 25
-kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
